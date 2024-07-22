@@ -1,8 +1,12 @@
+$app-bg-color: #d4f8e8;
+$button-bg-color: #006400;
+$button-text-color: #ffffff;
+
 .app {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #d4f8e8;
+  background-color: $app-bg-color;
   min-height: 100vh;
 }
 
@@ -27,13 +31,13 @@ form {
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  background-color: #006400;
-  color: #ffffff;
+  background-color: $button-bg-color;
+  color: $button-text-color;
   cursor: pointer;
 }
 
 .task-filter .active, .task-sort .active {
-  background: #003100;
+  background: darken($button-bg-color, 10%);
 }
 
 .task-list {
@@ -51,8 +55,8 @@ form {
   padding: 5px 10px;
   border: none;
   border-radius: 20px;
-  background-color: #006400;
-  color: #ffffff;
+  background-color: $button-bg-color;
+  color: $button-text-color;
   cursor: pointer;
 }
 
@@ -64,20 +68,17 @@ button {
   opacity: 0;
   transform: scale(0.9);
 }
-
 .task-enter-active {
   opacity: 1;
   transform: scale(1);
   transition: opacity 500ms, transform 500ms;
 }
-
 .task-exit {
   opacity: 1;
   transform: scale(1);
 }
-
 .task-exit-active {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 500ms, transform 500ms;
-}/*# sourceMappingURL=App.css.map */
+}
