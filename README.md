@@ -20,6 +20,9 @@
     - Возможность фильтровать задачи по статусу (все, завершенные, незавершенные).
     - Возможность сортировать задачи по дате завершения.
 
+## Ссылка на GitHubPage:
+
+https://daria-aleks.github.io/todo-app-list/
 
 In the project directory, you can run:
 
